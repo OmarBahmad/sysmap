@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { apiBase } from "../../services/apiBase/api"
 
 import { Post } from "../posts"
-import styles from "./style.module.scss";
+import styles from "./styles.module.scss";
 
 type PostProps = {
   id: number,
