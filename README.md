@@ -37,5 +37,6 @@ E acessar a url http://localhost:3000/ , se a porta 3000 estiver em uso o consol
 Lembrando que você pode visualizar também pelo Vercel pelos links:
 
 [Vercel Link 1](https://sysmap.vercel.app/)
+Ou
 [Vercel Link 2](https://sysmap-omarbahmad.vercel.app/)
 
