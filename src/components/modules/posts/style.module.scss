@@ -1,74 +1,74 @@
 .card {
-    background-color: var(--grey-300);
-    padding: 40px;
-    border-radius: 20px;
-  
-    &+.card {
-      margin-top: 40px;
-    }
-  
-    span {
-      color: var(--blue-500);
-      font-size: 1.2rem;
-    }
-  
-    h1 {
-      font-size: 1.5rem;
-      margin-top: 20px;
-    }
-  
-    p {
-      color: var(--grey-900);
-      margin-top: 20px;
-      margin-bottom: 40px;
-    }
-  
-    button {
-      background-color: var(--blue-500);
-      color: var(--white);
-      padding: 10px 20px;
-      border-radius: 40px;
-      width: 100%;
-      
-      &.buttonActive {
-        background-color: transparent;
-        color: var(--blue-500);
-        border: 1px solid var(--blue-500);
-      }
-    }
+  background-color: var(--grey-300);
+  padding: 40px;
+  border-radius: 20px;
+
+  & + .card {
+    margin-top: 40px;
   }
-  
-  .comments {
+
+  span {
+    color: var(--blue-500);
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
     margin-top: 20px;
-  
+  }
+
+  p {
+    color: var(--grey-900);
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  button {
+    background-color: var(--blue-500);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 40px;
+    width: 100%;
+
+    &.buttonActive {
+      background-color: transparent;
+      color: var(--blue-500);
+      border: 1px solid var(--blue-500);
+    }
+  }
+}
+
+.comments {
+  margin-top: 20px;
+
+  div {
+    background-color: var(--grey-500);
+    border-radius: 20px 0px 20px 0px;
+    padding: 20px;
+
+    & + div {
+      margin-top: 20px;
+    }
+
+    h3 {
+      font-size: 0.6rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 0.8rem;
+      color: var(--grey-900);
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .comments {
     div {
-      background-color: var(--grey-500);
-      border-radius: 20px 20px 20px 0px;
-      padding: 20px;
-  
-      &+div {
-        margin-top: 20px;
-      }
-  
       h3 {
-        font-size: 0.6rem;
-        margin-bottom: 10px;
-      }
-  
-      p {
-        margin: 0;
-        font-size: 0.8rem;
-        color: var(--grey-900);
+        font-size: 1rem;
       }
     }
   }
-  
-  @media (min-width: 800px) {
-    .comments {
-      div {
-        h3 {
-          font-size: 1rem;
-        }
-      }
-    }
-  }
+}
